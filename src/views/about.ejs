@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Sidebar Menu  | CodingLab </title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+   </head>
+<body>
+  <%- include("../views/header"); %> 
+  <%- include("../views/toolbar"); %> 
+  <section class="home-section">
+    <!-- <div class="text">Buoy Viewer</div> -->
+    <div class="title-body-content">
+      <h2>About us</h2>
+    </div>
+    <div class="body-content">
+      <div class="text">
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Error sit qui nemo modi nesciunt ipsa alias molestias similique, ad possimus quis, 
+          cupiditate vero dolorem maxime aliquid suscipit consequatur nobis et facere perspiciatis. 
+          Distinctio sint nostrum, molestias eveniet, vero corrupti ut quam provident ipsam,
+          nobis magnam voluptatibus fuga omnis fugiat saepe!
+        </span>
+        <ul class="list">
+          <li>hola</li>
+        </ul>
+      </div>
+      <div class="image"></div>
+      <div id="location" class="location"></div>
+    </div>
+  </section>
+</body>
+</html>
+<script src="/js/main.js"></script>
+<script src="/js/location.js"></script>

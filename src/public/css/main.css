@@ -1,0 +1,151 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body {
+  background-color: #E4E9F7;
+}
+.sidebar
+{
+  position: fixed;
+  left: 0;
+  top: 11vh;
+  height: 100%;
+  width: 78px;
+  background:#11101d;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open
+{
+  width: 250px;
+}
+.sidebar .logo-details
+{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon
+{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon, .sidebar.open .logo-details .logo_name
+{
+  opacity: 1;
+}
+.sidebar .logo-details #btn
+{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 30px;
+  transition: all 0.4s ease;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn
+{
+  text-align: right;
+}
+.sidebar i
+{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list
+{
+  margin-top: 50px;
+  height: 100%;
+}
+.sidebar li
+{
+  position: relative;
+  margin: 15px 0;
+  list-style: none;
+}
+.sidebar li div
+{
+  padding: 20px;
+}
+.sidebar li a
+{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background:#021f5d;
+}
+.sidebar li a:hover
+{
+  background: #FFF;
+}
+.sidebar li a .links_name
+{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name
+{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name, .sidebar li a:hover i
+{
+  transition: all 0.5s ease;
+  color: #11101d;
+}
+.sidebar li i
+{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.home-section
+{
+  position: relative;
+  background: #E4E9F7;
+  top: 11vh;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section
+{
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 89vh;
+}

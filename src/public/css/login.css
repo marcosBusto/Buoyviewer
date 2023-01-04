@@ -1,0 +1,157 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E9F7;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 6px;
+    background: #11101d;
+}
+/* .header
+{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
+.header a
+{
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.title_web
+{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 9px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.title
+{
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+form
+{
+    margin-top: 30px;
+}
+.form .field
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+.field input, .field button
+{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input
+{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+.field input:focus
+{
+    border-bottom-width: 2px;
+}
+.eye-icon
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button
+{
+    color: #fff;
+    background-color: #021f5d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover
+{
+    background-color: #fff;
+    color: #11101d;
+}
+.account a
+{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.back a
+{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.back a i 
+{
+    margin-left: 3px;
+}
+.home a
+{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    float: right;
+}
+.home a i 
+{
+    margin-right: 3px;
+}
+@media screen and (max-width: 400px) 
+{
+    .form{
+        padding: 20px 10px;
+    }
+    
+}
