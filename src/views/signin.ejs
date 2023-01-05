@@ -23,12 +23,7 @@
           <h1>Bouy Viewer</h1>
         </div>
         <div class="title">Signup</div>
-        <form action="#">
-          <div class="field user">
-            <div class="input-field">
-              <input type="text" placeholder="Enter your username" class="user" />
-            </div>
-          </div>
+        <form action="/signin" method="POST">
           <div class="field email-field">
             <div class="input-field">
               <input type="email" placeholder="Enter your email" class="email" />
@@ -49,16 +44,6 @@
                 Please enter atleast 8 charatcer with number, symbol, small and
                 capital letter.
               </p>
-            </span>
-          </div>
-          <div class="field confirm-password">
-            <div class="input-field">
-              <input type="password" placeholder="Confirm password" class="cPassword"/>
-              <i class="bx bx-hide show-hide"></i>
-            </div>
-            <span class="error cPassword-error">
-              <i class="bx bx-error-circle error-icon"></i>
-              <p class="error-text">Password don't match</p>
             </span>
           </div>
           <div class="input-field button">
