@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 //initializations
 const app = express();
-require('./database')
+require('./database');
 
 //settings
 app.engine('ejs', engine);

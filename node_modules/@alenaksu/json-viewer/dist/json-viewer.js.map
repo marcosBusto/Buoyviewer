@@ -1,0 +1,1 @@
+{"version":3,"file":"json-viewer.js","sources":["../src/index.ts"],"sourcesContent":["import { JsonViewer } from './JsonViewer';\n\ncustomElements.define('json-viewer', JsonViewer);\n\ndeclare global {\n    interface HTMLElementTagNameMap {\n        'json-viewer': JsonViewer;\n    }\n}\n"],"names":["customElements","define","JsonViewer"],"mappings":"uHAEAA,eAAeC,OAAO,cAAeC"}

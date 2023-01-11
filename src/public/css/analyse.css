@@ -1,0 +1,35 @@
+.representation
+{
+    background-color: #25c4d8;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.flyers
+{
+    background-color: red;
+    width: 55%;
+    height: 36vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card
+{
+    max-width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #d7d7d7;
+    padding: 10px;
+}
+.categoria-card span
+{
+    background-color: #25c4d8;
+    color: #ffff;
+    border-radius: 4px;
+    padding: 2px;
+}
+.card footer{
+    padding: 10px;
+}

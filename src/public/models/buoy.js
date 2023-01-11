@@ -9,6 +9,7 @@ var BuoySchema = new Schema({
     day: { type: Number, required: true },
     hour: { type: Number, required: true },
     minute: { type: Number, required: true },
+    date: { type: Date, required: true },
     latitude: { type: Number, required: true },
     longitude: { type: Number, required: true },
     bottomdepth: { type: Number, required: true },
@@ -37,8 +38,4 @@ var BuoySchema = new Schema({
     phtsinsitutp: { type: Number, required: true }
 });
 
-BuoySchema.virtual('date').get(function() {
-    return this._id.getTimestamp();
-});
-
-mongoose.model('Buoy', BuoySchema);
+module.exports = mongoose.model('Buoy', BuoySchema);

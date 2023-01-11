@@ -4,11 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/analyse.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://unpkg.com/@mongodb-js/charts-embed-dom@beta"></script>
     <title>Analyse</title>
+    <style>
+    #chart1 {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+
+    #chart2 {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+
+    #chart3 {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+
+    #chart4 {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
     <%- include("../views/header"); %> 
     <%- include("../views/toolbar"); %>
+    <section class="home-section">
+        <!-- <div class="text">Buoy Viewer</div> -->
+      <button id="Refresh">Refresh</button>
+      Cruise:
+      <select id="cruise">
+        <option value="7">7</option>
+        <option value="12">12</option>
+      </select>
+      <div class="representation">
+        <div id="chart1"></div>
+        <div id="chart2"></div>
+        <div id="chart3"></div>
+        <div id="chart4"></div>
+        <!--
+        <iframe style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-mongodb-gtywi/embed/charts?id=7f535ee7-2074-4350-9f94-237277b94391&theme=light"></iframe>
+        -->
+        <script>
+        const sdk1 = new ChartsEmbedSDK({
+            baseUrl: 'https://charts.mongodb.com/charts-project-0-dvilj',
+            showAttribution: false
+        });
+
+        const chart1 = sdk1.createChart({ chartId: '63badecc-fc32-4c75-861b-427c592c698d' });
+        chart1.render(document.getElementById('chart1'));
+
+        const sdk2 = new ChartsEmbedSDK({
+            baseUrl: 'https://charts.mongodb.com/charts-project-0-dvilj',
+            showAttribution: false
+        });
+
+        const chart2 = sdk2.createChart({ chartId: '63badeec-27ef-4133-847b-df6e0f0c21d1' });
+        chart2.render(document.getElementById('chart2'));
+
+        const sdk3 = new ChartsEmbedSDK({
+            baseUrl: 'https://charts.mongodb.com/charts-project-0-dvilj',
+            showAttribution: false
+        });
+
+        const chart3 = sdk3.createChart({ chartId: '63bae083-afae-4d0e-8746-43218a1ced6b' });
+        chart3.render(document.getElementById('chart3'));
+
+        const sdk4 = new ChartsEmbedSDK({
+            baseUrl: 'https://charts.mongodb.com/charts-project-0-dvilj',
+            showAttribution: false
+        });
+
+        const chart4 = sdk4.createChart({ chartId: '63bae0ac-fc32-472d-8315-427c592dacca' });
+        chart4.render(document.getElementById('chart4'));
+
+        document.getElementById("Refresh").addEventListener('click', () => {
+            chart1.refresh();
+            chart2.refresh();
+            chart3.refresh();
+            chart4.refresh();
+        });
+
+        function filter() {
+            chart1.setFilter({cruise: 7});
+            chart2.setFilter({cruise: 7});
+            chart3.setFilter({cruise: 7});
+            chart4.setFilter({cruise: 7});
+        }
+        </script>
+      </div>
+      <div class="flyers">  
+        <div class="card-wrap">
+          <article class="card">
+              <footer class="footer-card">
+                  <div class="categoria-card">
+                      <span>Category</span>
+                  </div>
+                  <div class="text-card">
+                      <h3>Lorem, ipsum dolor.</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, blanditiis quia! Cupiditate delectus ea exercitationem quis error? Iste enim accusamus voluptates voluptas inventore cum repellat!</p>
+                  </div>
+              </footer>
+          </article>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
+<script src="/js/main.js"></script>

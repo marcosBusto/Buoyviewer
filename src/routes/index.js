@@ -31,4 +31,11 @@ router.get('/analyse', (req, res, next) => {
     res.render('analyse');
 });
 
+// router.get('/prueba', (req, res, next) => {
+//     Buoy.find(function(err, buoys) {
+//         if(err) return next(err);
+//         res.render('prueba', { buoys });
+//     });
+// });
+
 module.exports = router;
