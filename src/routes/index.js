@@ -1,11 +1,13 @@
 const router = require('express').Router();
 require('../public/models/buoy'); 
+require('../public/models/user'); 
 
 const mongoose = require('mongoose');
 const { Router } = require('express');
 
 var ObjectId = mongoose.Types.ObjectId;
 Buoy = mongoose.model('Buoy');
+User = mongoose.model('users');
 
 router.get('/', (req, res, next) => {
     res.render('index');
@@ -30,12 +32,5 @@ router.get('/about', (req, res, next) => {
 router.get('/analyse', (req, res, next) => {
     res.render('analyse');
 });
-
-// router.get('/prueba', (req, res, next) => {
-//     Buoy.find(function(err, buoys) {
-//         if(err) return next(err);
-//         res.render('prueba', { buoys });
-//     });
-// });
 
 module.exports = router;

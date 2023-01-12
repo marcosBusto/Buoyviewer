@@ -1,7 +1,3 @@
-// MAPAS 
-
-// import { buoys } from "../layers/buoys";
-
 L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
   
   onAdd: function (map) {
@@ -127,14 +123,3 @@ var wmsinfo = L.tileLayer.betterWms('http://localhost:8080/geoserver/Buoyviewer/
   format: 'image/png',
   transparent: true 
 }).addTo(map);
-// function popup(feature, layer) {
-//   if (feature.properties && feature.properties.cruise) {
-//     layer.bindPopup("<strong>cruise: </strong>" + feature.properties.cruise + "</br>");
-//   }
-// }
-
-// L.geoJson(buoys).addTo(map);
-
-// var buoysJS = L.geoJson(buoys, {
-//   onEachFeature: popup
-// }).addTo(map);
