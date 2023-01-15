@@ -1,7 +1,6 @@
 const router = require('express').Router();
 require('../public/models/buoy'); 
 require('../public/models/user'); 
-const passport = require('passport');
 
 const mongoose = require('mongoose');
 const { Router } = require('express');
@@ -22,21 +21,9 @@ router.get('/signin', (req, res, next) => {
     res.render('signin');
 });
 
-router.post('/signin', passport.authenticate('local-signup', {
-    successRedirect: '/login',
-    failureRedirect: '/signin',
-    failureFlash: true
-  }));
-
 router.get('/login', (req, res, next) => {
     res.render('login');
 });
-
-router.post('/login', passport.authenticate('local-signin', {
-    successRedirect: '/',
-    failureRedirect: '/signin',
-    failureFlash: true
-  }));
 
 router.get('/about', (req, res, next) => {
     res.render('about');
