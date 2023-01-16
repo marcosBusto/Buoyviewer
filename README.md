@@ -9,6 +9,7 @@ Se necesita instalar Geoserver y la capa vectorial para acceder a todas las func
   5. Abrir el Geoserver desde el navegador introduciendo la dirección ```http://localhost:8080/geoserver```
   6. Crear el espacio de almacenamiento Buoyviewer y subir a dicho espacio la capa Buoys.shp
   7. Incluir el archivo content.ftl en la carpeta correspondiente al espacio de almacenamiento creado en el paso anterior, dentro de la carpeta ```\webapps\geoserver\data\workspaces\Buoyviewer\Buoyviewer```
+  8. Activar el CORS dentro del archivo ```web.xml``` en la carpeta de Geoserver WEB-INF.
 
 ## Arrancar servidor
   1. Clonar este repositorio

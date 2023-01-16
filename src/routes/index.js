@@ -36,6 +36,7 @@ router.get('/analyse', isLoggedIn, (req, res, next) => {
     res.render('analyse');
 });
 
+<<<<<<< HEAD
 router.get('/login', (req, res) => {
     res.render('login', {
         message: req.flash('loginMessage')
@@ -68,3 +69,6 @@ router.get('/logout', function(req, res, next){
 });
 
 module.exports = router;
+=======
+module.exports = router;
+>>>>>>> 0208e97538b70c0a9b6b12c4b2c68e79a465cadc

@@ -87,6 +87,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
@@ -110,3 +111,9 @@ module.exports = app;
  app.listen(3000, () => {
 console.log('server on port 3000');
  });
+=======
+//starting server
+app.listen(3000, () => {
+    console.log('server on port 3000');
+});
+>>>>>>> 0208e97538b70c0a9b6b12c4b2c68e79a465cadc
