@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>  
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
@@ -18,16 +18,18 @@
     <%- include("../views/header"); %> 
     <%- include("../views/toolbar"); %>
     <section class="home-section">
-        <div id="map" class="map"></div>
-        <button>
-            <a href="http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=shape-zip&srsName=epsg:4326">Download zip shp</a>
-        </button>
-        <button>
-            <a href="http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=application/json&srsName=epsg:4326">Download JSON</a>
-        </button>
-        <button>
-            <a href="http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=csv&srsName=epsg:4326">Download CSV</a>
-        </button>
+        <div class="container">
+            <div class="filter_1">
+                <div class="filter_2">
+                    <button onclick="window.location.href='http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=shape-zip&srsName=epsg:4326'" class="button_1">Download Shapefile</button>
+                    <button onclick="window.location.href='http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=application/json&srsName=epsg:4326'" class="button_1">Download JSON</button>
+                    <button onclick="window.location.href='http://localhost:8080/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=Buoyviewer:Buoys&outputFormat=csv&srsName=epsg:4326'" class="button_1">Download</button>
+                </div>
+            </div>
+            
+            <div id="map" class="map"></div>
+        </div>
+        
     </section>
 </body>
 </html>

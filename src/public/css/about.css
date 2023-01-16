@@ -1,7 +1,7 @@
 .title-body-content
 {
-    padding: 10px;
-    font-size: 20px;
+    padding: 5vh;
+    font-size: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,18 +11,20 @@
 {
     padding: 10px;
     width: 100%;
+    position: absolute;
+    top: 18vh;
 }
 .body-content .text
 {
     margin-left: 20px;
-}
-.body-content .text .list
-{
-    padding: 10px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .location
 {
     height: 50vh;
-    width: 100%;
+    width: 91%;
+    position: absolute;
+    top: 18vh;
+    margin-left: 8vh;
 }

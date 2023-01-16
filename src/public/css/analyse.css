@@ -1,15 +1,145 @@
-.representation
+.filter_1
 {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  height: 10vh; 
+  background-color:#11101d;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content:initial;
+  position: fixed;
+  z-index: 100;
 }
-.flyers
+.filter_2
 {
-    width: 55%;
-    height: 36vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 8vh;
+  padding: 0 0.5vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  overflow: auto;
+}
+.button_1
+{
+  color:#fff;
+  background: #021f5d;
+  width: 150px;
+  height: 6vh;
+  margin-right: 3vh;
+  border-radius: 6px;
+  border:none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.button_1:hover{
+  background-color: #fff;
+  color: #11101d;
+  transition: 0.4s;
+}
+.button_2
+{
+  color:#021f5d;
+  width: 100px;
+  height: 5vh;
+  margin-right: 3vh;
+  border-radius: 6px;
+  border:none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.cruise
+{
+  background-color: #021f5d;
+  color:#ffffff;
+  width: 250px;
+  height: 6vh;
+  margin-right: 3vh;
+  border-radius: 6px;
+  border:none;
+  font-size: 18px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cruise p
+{
+  margin-left: 3vh;
+}
+.representation_1
+{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10vh;
+}
+.representation_2
+{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 70vh;
+}
+.representation_3
+{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 130vh;
+}
+.chart1 
+{
+  width: 35%;
+  height: 50vh;
+  margin-left: 10vh;
+  border: 1px solid #ccc;
+  float: left;
+}
+.chart2 
+{
+  width: 35%;
+  height: 50vh;
+  margin-right: 10vh;
+  border: 1px solid #ccc;
+  float: left;
+}
+.chart3 
+{
+  width: 35%;
+  height: 50vh;
+  margin-left: 10vh;
+  border: 1px solid #ccc;
+  float: left;
+}
+.chart4 
+{
+  width: 35%;
+  height: 50vh;
+  margin-right: 10vh;
+  border: 1px solid #ccc;
+  float: left;
+}
+/* .chart5 
+{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    float: left;
+} */
+.chart6
+{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  float: left;
 }

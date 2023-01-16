@@ -50,7 +50,7 @@ function confirmPass() {
 }
 
 // Calling Funtion on Form Sumbit
-form.addEventListener("submit", (e) => {
+/*form.addEventListener("submit", (e) => {
   e.preventDefault(); //preventing form submitting
   checkEmail();
   createPass();
@@ -68,4 +68,4 @@ form.addEventListener("submit", (e) => {
   ) {
     location.href = form.getAttribute("action");
   }
-});
+});*/

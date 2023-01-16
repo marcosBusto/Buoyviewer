@@ -11,6 +11,8 @@
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   </head>
+  <!-- No se muestra comprobacion de contraseña por conficto en autenticacion.
+  Codigo Javascript comentado  -->
   <body>
     <div class="form-container">
       <div class="container">
@@ -23,15 +25,15 @@
           <h1>Bouy Viewer</h1>
         </div>
         <div class="title">Signup</div>
-        <form action="/signin" method="POST">
+        <form action="/signin" method="post">
           <div class="field user">
             <div class="input-field">
               <input type="text" name="username" placeholder="Enter your username" class="user" />
             </div>
-          </div>
+          </div> 
           <div class="field email-field">
             <div class="input-field">
-              <input type="email" placeholder="Enter your email" class="email" />
+              <input type="email" name="email" placeholder="Enter your email" class="email" />
             </div>
             <span class="error email-error">
               <i class="bx bx-error-circle error-icon"></i>
@@ -39,9 +41,9 @@
             </span>
           </div>
           <div class="field create-password">
-            <div class="input-field">
-              <input type="password" placeholder="Create password" class="password"/>
-              <i class="bx bx-hide show-hide"></i>
+          <div class="input-field">
+            <input type="password" name="password" placeholder="Create  Password" class="password">
+            <i class="bx bx-hide show-hide"></i>
             </div>
             <span class="error password-error">
               <i class="bx bx-error-circle error-icon"></i>
@@ -50,8 +52,8 @@
                 capital letter.
               </p>
             </span>
-          </div>
-          <div class="field confirm-password">
+        </div>
+           <div class="field confirm-password">
             <div class="input-field">
               <input type="password" name="cpassword" placeholder="Confirm password" class="cPassword"/>
               <i class="bx bx-hide show-hide"></i>
@@ -60,7 +62,7 @@
               <i class="bx bx-error-circle error-icon"></i>
               <p class="error-text">Password don't match</p>
             </span>
-          </div>
+          </div> 
           <div class="input-field button">
             <input type="submit" value="Submit"/>
           </div>
@@ -82,6 +84,7 @@
         </div>
       </div>
     </div>
+
     <!-- JavaScript -->
     <script src="/js/signin.js"></script>
   </body>

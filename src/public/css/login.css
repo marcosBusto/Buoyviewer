@@ -47,14 +47,14 @@
 {
   color: #fff;
   margin-top: 10px;
-  font-size: 9px;
+  font-size: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 .title
 {
-    font-size: 38px;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
     text-align: center;

@@ -1,23 +1,27 @@
 .title-body-content
 {
-    padding: 10px;
-    font-size: 20px;
+    padding: 5vh;
+    font-size: 36px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-
 }
 .body-content
 {
     padding: 10px;
     width: 100%;
+    position: absolute;
+    top:20vh;
 }
 .body-content .text
 {
     margin-left: 20px;
+    margin-right: 20px;
 }
 .body-content .text .list
 {
     padding: 10px;
     margin-left: 20px;
+    margin-right: 50px;
+    list-style: none;
 }
