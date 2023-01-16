@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
@@ -27,7 +26,6 @@
     "object-to-xml": "^2.0.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
-=======
     "@alenaksu/json-viewer": "^2.0.0",
     "@mongodb-js/charts-embed-dom": "^2.3.0",
     "bcrypt-nodejs": "^0.0.3",
@@ -43,7 +41,6 @@
     "passport": "^0.6.0",
     "regenerator-runtime": "^0.13.11",
     "socket.io": "^4.5.3"
->>>>>>> 0208e97538b70c0a9b6b12c4b2c68e79a465cadc
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
